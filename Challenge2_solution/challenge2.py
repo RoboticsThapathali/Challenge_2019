@@ -88,7 +88,7 @@ def main():
 		print(correct)
 		val = {"ans": str(correct),'name' : 'kaladon' , 'roll' : 'THA075BEX303'}
 		# val = [('ans',correct),('name','kaladon'),('roll','THA075BEX303')]
-		res = s.post("http://secretmsg.6te.net/result.php", params=val, json = (val))
+		res = s.post("http://secretmsg.6te.net/result.php", data=val)
 		print("the time for execution was "+ str(time.time()- startTime ))
 		print(res.text)
 	
